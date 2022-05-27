@@ -9,6 +9,9 @@
   },
   "author": "Prankul Verma",
   "license": "ISC",
+  "engines": {
+    "node": "16.x"
+  },
   "dependencies": {
     "body-parser": "^1.20.0",
     "ejs": "^3.1.8",
