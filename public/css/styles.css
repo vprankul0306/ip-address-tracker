@@ -1,0 +1,182 @@
+body {
+  margin: 0 0 0 0;
+  background-color: #354259;
+}
+.backimg {
+  width: 100%;
+}
+.title {
+  font-family: "Rubik", sans-serif;
+  position: absolute;
+  color: white;
+  left: 800px;
+  top: 20px;
+  font-weight: 500;
+  font-size: 35px;
+}
+.ipinp {
+  position: absolute;
+  left: 600px;
+  top: 120px;
+  width: 700px;
+  height: 60px;
+  border-radius: 15px;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding-left: 20px;
+}
+.search {
+  position: absolute;
+  left: 1260px;
+  top: 120px;
+  background-color: black;
+  width: 65px;
+  height: 63px;
+  border-radius: 0 15px 15px 0;
+}
+.arrowimg {
+  position: absolute;
+  left: 28px;
+  top: 25px;
+}
+.info {
+  top: 240px;
+  left: 250px;
+  position: absolute;
+  width: 1400px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: white;
+  font-family: "Rubik", sans-serif;
+}
+.ip {
+  position: absolute;
+  color: hsl(0, 0%, 59%);
+  left: 30px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  top: 30px;
+}
+.fetched-ip {
+  position: absolute;
+  left: 30px;
+  top: 60px;
+  font-size: 28px;
+  font-weight: 500;
+  color: hsl(0, 0%, 17%);
+}
+.loc {
+  position: absolute;
+  color: hsl(0, 0%, 59%);
+  left: 360px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  top: 30px;
+}
+.fetched-loc {
+  position: absolute;
+  left: 360px;
+  top: 60px;
+  font-size: 28px;
+  font-weight: 500;
+  color: hsl(0, 0%, 17%);
+}
+.timezone {
+  position: absolute;
+  color: hsl(0, 0%, 59%);
+  left: 730px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  top: 30px;
+}
+.fetched-timezone {
+  position: absolute;
+  left: 730px;
+  top: 60px;
+  font-size: 28px;
+  font-weight: 500;
+  color: hsl(0, 0%, 17%);
+}
+.isp {
+  position: absolute;
+  color: hsl(0, 0%, 59%);
+  left: 1130px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  top: 30px;
+}
+.fetched-isp {
+  position: absolute;
+  left: 1130px;
+  top: 60px;
+  font-size: 28px;
+  font-weight: 500;
+  color: hsl(0, 0%, 17%);
+}
+.first {
+  transform: rotate(90deg);
+  width: 80px;
+  position: absolute;
+  left: 280px;
+  top: 85px;
+  background-color: hsl(0, 0%, 59%);
+  border: none;
+  height: 1px;
+}
+.second {
+  transform: rotate(90deg);
+  width: 80px;
+  position: absolute;
+  left: 650px;
+  top: 85px;
+  background-color: hsl(0, 0%, 59%);
+  border: none;
+  height: 1px;
+}
+.third {
+  transform: rotate(90deg);
+  width: 80px;
+  position: absolute;
+  left: 1050px;
+  top: 85px;
+  background-color: hsl(0, 0%, 59%);
+  border: none;
+  height: 1px;
+}
+.ipinp::-webkit-input-placeholder {
+  font-size: 18px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.ipinp::-moz-placeholder {
+  font-size: 18px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.ipinp:-ms-input-placeholder {
+  font-size: 18px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.ipinp::-ms-input-placeholder {
+  font-size: 18px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.ipinp::placeholder {
+  font-size: 18px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  color: hsl(0, 0%, 59%);
+}
