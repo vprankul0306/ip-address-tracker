@@ -12,10 +12,12 @@ app.use(express.static("public"));
 
 app.get("/", function (req, res) {
   res.render("index", {
-    location: "New York",
-    ip_address: "192.168.0.1",
-    timezone: "UTC +05:00",
-    isp: "Starlink",
+    location: "--",
+    ip_address: "--",
+    timezone: "--",
+    isp: "--",
+    latitude: 40.7128,
+    longitude: -74.006,
   });
 });
 app.post("/", function (req, res) {
@@ -34,11 +36,15 @@ app.post("/", function (req, res) {
         const ip = json.ip;
         const isp = json.as.name;
         const timezone = json.location.timezone;
+        const latitude = json.location.lat;
+        const longitude = json.location.lng;
         res.render("index", {
           location: city,
           ip_address: ip,
           timezone: timezone,
           isp: isp,
+          latitude: latitude,
+          longitude: longitude,
         });
       });
     } else {
