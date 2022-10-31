@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const https = require("https");
 const bodyParser = require("body-parser");
@@ -19,7 +20,7 @@ app.get("/", function (req, res) {
 });
 app.post("/", function (req, res) {
   const ip = req.body.ipaddress;
-  const apiKey = "at_yklQMidh5LeDKHoef6YuVdegaNi7N";
+  const apiKey = process.env.API_KEY;
   const url =
     "https://geo.ipify.org/api/v2/country,city?apiKey=" +
     apiKey +
