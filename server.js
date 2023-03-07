@@ -25,7 +25,7 @@ app.post("/", function (req, res) {
   const apiKey = process.env.API_KEY;
   const url =
     "https://geo.ipify.org/api/v2/country,city?apiKey=" +
-    apiKey +
+    "at_yklQMidh5LeDKHoef6YuVdegaNi7N" +
     "&ipAddress=" +
     ip;
   https.get(url, function (response) {
