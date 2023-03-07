@@ -34,43 +34,66 @@
   </head>
   <body>
     <div class="header">
-      <h1 class="title">IP Address Tracker</h1>
-      <form action="" method="post" id="form-post">
-        <img src="images/pattern-bg.png" alt="" class="backimg" />
-        <input
-          type="text"
-          name="ipaddress"
-          class="ipinp"
-          placeholder="Search for any IP Address or domain"
-        />
-        <a
-          href="javascript:$('form-post').submit();"
-          class="search"
-          onclick="document.getElementById('form-post').submit();"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="11"
-            height="14"
-            class="arrowimg"
-          >
-            <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
-          </svg>
-        </a>
-      </form>
-    </div>
-    <div class="info">
-      <h3 class="ip">IP ADDRESS</h3>
-      <h1 class="fetched-ip"><%=ip_address%></h1>
-      <hr class="first" />
-      <h3 class="loc">LOCATION</h3>
-      <h1 class="fetched-loc"><%=location%></h1>
-      <hr class="second" />
-      <h3 class="timezone">TIMEZONE</h3>
-      <h1 class="fetched-timezone"><%=timezone%></h1>
-      <hr class="third" />
-      <h3 class="isp">ISP</h3>
-      <h1 class="fetched-isp"><%=isp%></h1>
+      <img src="images/pattern-bg.png" alt="" class="backimg" />
+      <div class="content">
+        <h1 class="title">IP Address Tracker</h1>
+        <div class="inputArea">
+          <div>
+          <form action="" method="post" id="form-post">
+              <input
+                type="text"
+                name="ipaddress"
+                class="ipinp"
+                placeholder="Search for any IP Address or domain"
+              />
+          </div>
+          <div>
+              <a
+                href="javascript:$('form-post').submit();"
+                class="search"
+                onclick="document.getElementById('form-post').submit();"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="11"
+                  height="14"
+                  class="arrowimg"
+                >
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    stroke-width="3"
+                    d="M2 1l6 6-6 6"
+                  />
+                </svg>
+              </a>
+            </form>
+          </div>
+          
+        </div>
+
+        <div class="info">
+          <div>
+            <h3 class="ip heading">IP ADDRESS</h3>
+            <h1 class="fetched-ip"><%=ip_address%></h1>
+          </div>
+          <hr class="first" />
+          <div>
+            <h3 class="loc heading">LOCATION</h3>
+            <h1 class="fetched-loc"><%=location%></h1>
+          </div>
+          <hr class="second" />
+          <div>
+            <h3 class="timezone heading">TIMEZONE</h3>
+            <h1 class="fetched-timezone"><%=timezone%></h1>
+          </div>
+          <hr class="third" />
+          <div>
+            <h3 class="isp heading">ISP</h3>
+            <h1 class="fetched-isp"><%=isp%></h1>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="map" id="map">
       <script>

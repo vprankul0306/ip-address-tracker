@@ -1,346 +1,98 @@
 body {
   margin: 0 0 0 0;
-  background-color: #354259;
 }
 .backimg {
   width: 100%;
+  height: 35vh;
+  margin-top: 0;
+  z-index: 0;
+}
+.header {
+  display: flex;
+  justify-content: center;
 }
 .title {
-  font-family: "Rubik", sans-serif;
-  position: absolute;
   color: white;
-  left: 800px;
-  top: 20px;
-  font-weight: 500;
-  font-size: 35px;
-}
-.ipinp {
-  position: absolute;
-  left: 600px;
-  top: 120px;
-  width: 700px;
-  height: 60px;
-  border-radius: 15px;
   font-family: "Rubik", sans-serif;
-  font-size: 18px;
-  outline: none;
-  border: none;
-  padding-left: 20px;
-}
-.search {
-  position: absolute;
-  left: 1260px;
-  top: 120px;
-  background-color: black;
-  width: 65px;
-  height: 63px;
-  border-radius: 0 15px 15px 0;
-}
-.arrowimg {
-  position: absolute;
-  left: 28px;
-  top: 25px;
-}
-.info {
-  top: 240px;
-  left: 250px;
-  position: absolute;
-  width: 1400px;
-  height: 200px;
-  border-radius: 20px;
-  background-color: white;
-  font-family: "Rubik", sans-serif;
-  z-index: 3;
-}
-.ip {
-  position: absolute;
-  color: hsl(0, 0%, 59%);
-  left: 30px;
-  font-size: 14px;
-  letter-spacing: 1.5px;
-  top: 30px;
-}
-.fetched-ip {
-  position: absolute;
-  left: 30px;
-  top: 60px;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: 500;
-  color: hsl(0, 0%, 17%);
 }
-.loc {
+.content {
+  display: flex;
   position: absolute;
-  color: hsl(0, 0%, 59%);
-  left: 360px;
-  font-size: 14px;
-  letter-spacing: 1.5px;
-  top: 30px;
-}
-.fetched-loc {
-  position: absolute;
-  left: 360px;
-  top: 60px;
-  font-size: 28px;
-  font-weight: 500;
-  color: hsl(0, 0%, 17%);
-}
-.timezone {
-  position: absolute;
-  color: hsl(0, 0%, 59%);
-  left: 730px;
-  font-size: 14px;
-  letter-spacing: 1.5px;
-  top: 30px;
-}
-.fetched-timezone {
-  position: absolute;
-  left: 730px;
-  top: 60px;
-  font-size: 28px;
-  font-weight: 500;
-  color: hsl(0, 0%, 17%);
-}
-.isp {
-  position: absolute;
-  color: hsl(0, 0%, 59%);
-  left: 1130px;
-  font-size: 14px;
-  letter-spacing: 1.5px;
-  top: 30px;
-}
-.fetched-isp {
-  position: absolute;
-  left: 1130px;
-  top: 60px;
-  font-size: 28px;
-  font-weight: 500;
-  color: hsl(0, 0%, 17%);
-}
-.first {
-  transform: rotate(90deg);
-  width: 80px;
-  position: absolute;
-  left: 280px;
-  top: 85px;
-  background-color: hsl(0, 0%, 59%);
-  border: none;
-  height: 1px;
-}
-.second {
-  transform: rotate(90deg);
-  width: 80px;
-  position: absolute;
-  left: 650px;
-  top: 85px;
-  background-color: hsl(0, 0%, 59%);
-  border: none;
-  height: 1px;
-}
-.third {
-  transform: rotate(90deg);
-  width: 80px;
-  position: absolute;
-  left: 1050px;
-  top: 85px;
-  background-color: hsl(0, 0%, 59%);
-  border: none;
-  height: 1px;
-}
-.map {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  height: 605px;
+  top: 1vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3vh;
   z-index: 1;
 }
-.loc-icon {
-  position: absolute;
-  left: 500px;
-  top: 200px;
-  z-index: 2;
+.ipinp {
+  width: 70vh;
+  height: 7vh;
+  border-radius: 20px 0 0 20px;
+  border-style: none;
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.ipinp:focus {
+  outline: none;
+}
+.inputArea {
+  display: flex;
+  width: 100vh;
+  justify-content: center;
+}
+.arrowimg {
+  background-color: black;
+  width: 7vh;
+  height: 7vh;
+  border-radius: 0 20px 20px 0;
 }
 
 .ipinp::-webkit-input-placeholder {
-  font-size: 18px;
-  position: absolute;
-  left: 20px;
-  top: 20px;
-}
-
-.ipinp::-moz-placeholder {
-  font-size: 18px;
-  position: absolute;
-  left: 20px;
-  top: 20px;
-}
-
-.ipinp:-ms-input-placeholder {
-  font-size: 18px;
-  position: absolute;
-  left: 20px;
-  top: 20px;
-}
-
-.ipinp::-ms-input-placeholder {
-  font-size: 18px;
-  position: absolute;
-  left: 20px;
-  top: 20px;
-}
-
-.ipinp::placeholder {
-  font-size: 18px;
-  position: absolute;
-  left: 20px;
-  top: 20px;
+  font-size: 20px;
   color: hsl(0, 0%, 59%);
 }
 
-@media (max-width: 500px) {
-  hr {
-    display: none;
-  }
-  .title {
-    left: 95px;
-    width: 30rem;
-    font-size: 25px;
-  }
-  .backimg {
-    width: 100%;
-    height: 370px;
-  }
-  .info {
-    left: 25px;
-    position: absolute;
-    top: 220px;
-    width: 23rem;
-    height: 300px;
-  }
-  .ipinp {
-    left: 25px;
-    position: absolute;
-    width: 21rem;
-    height: 60px;
-    border-radius: 15px;
-    font-family: "Rubik", sans-serif;
-    font-size: 18px;
-    outline: none;
-    border: none;
-    padding-left: 20px;
-    top: 100px;
-  }
-  .ip {
-    left: 140px;
-    top: 10px;
-    font-size: 12px;
-    letter-spacing: 1.5px;
-  }
-  .fetched-ip {
-    left: 120px;
-    top: 30px;
-    font-size: 20px;
-    font-weight: 500;
-    color: hsl(0, 0%, 17%);
-    top: 30px;
-  }
-  .loc {
-    left: 150px;
-    position: absolute;
-    color: hsl(0, 0%, 59%);
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    top: 80px;
-  }
-  .fetched-loc {
-    left: 125px;
-    position: absolute;
-    font-size: 20px;
-    font-weight: 500;
-    color: hsl(0, 0%, 17%);
-    top: 100px;
-  }
-  .timezone {
-    left: 150px;
-    position: absolute;
-    color: hsl(0, 0%, 59%);
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    top: 150px;
-  }
-  .fetched-timezone {
-    left: 150px;
-    position: absolute;
-    font-size: 20px;
-    font-weight: 500;
-    color: hsl(0, 0%, 17%);
-    top: 170px;
-  }
-  .isp {
-    left: 175px;
-    position: absolute;
-    color: hsl(0, 0%, 59%);
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    top: 220px;
-  }
-  .fetched-isp {
-    left: 110px;
-    position: absolute;
-    font-size: 20px;
-    font-weight: 500;
-    color: hsl(0, 0%, 17%);
-    top: 240px;
-  }
-  .search {
-    left: 325px;
-    position: absolute;
-    background-color: black;
-    top: 100px;
-    width: 60px;
-    height: 63px;
-    border-radius: 0 15px 15px 0;
-  }
-  .arrowimg {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-  }
-  .map {
-    height: 550px;
-  }
-  .ipinp::-webkit-input-placeholder {
-    font-size: 18px;
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    color: hsl(0, 0%, 59%);
-  }
-  .ipinp::-moz-placeholder {
-    font-size: 18px;
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    color: hsl(0, 0%, 59%);
-  }
-  .ipinp:-ms-input-placeholder {
-    font-size: 18px;
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    color: hsl(0, 0%, 59%);
-  }
-  .ipinp::-ms-input-placeholder {
-    font-size: 18px;
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    color: hsl(0, 0%, 59%);
-  }
-  .ipinp::placeholder {
-    font-size: 12px;
-    position: absolute;
-    left: 20px;
-    top: 25px;
-    color: hsl(0, 0%, 59%);
-  }
+.ipinp::-moz-placeholder {
+  font-size: 20px;
+  color: hsl(0, 0%, 59%);
+}
+
+.ipinp:-ms-input-placeholder {
+  font-size: 20px;
+  color: hsl(0, 0%, 59%);
+}
+
+.ipinp::-ms-input-placeholder {
+  font-size: 20px;
+  color: hsl(0, 0%, 59%);
+}
+
+.ipinp::placeholder {
+  font-size: 20px;
+  color: hsl(0, 0%, 59%);
+}
+.ipinp:hover {
+  cursor: pointer;
+}
+.info {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  background-color: white;
+  width: 140vh;
+  height: 15vh;
+  border-radius: 20px;
+  padding: 40px;
+}
+.map {
+  width: 100%;
+  height: 65vh;
+  z-index: 0;
+}
+.heading {
+  color: hsl(0, 0%, 59%);
+  font-size: 15px;
 }
